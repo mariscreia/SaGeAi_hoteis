@@ -155,7 +155,9 @@
   /* responsivo */
 @media (max-width: 667px){
 
-    body{
+    @media (max-width: 667px){
+
+    #bruh{
      
         width: 200px;
         height: 200px;
@@ -164,7 +166,7 @@
 }
 
 @media (max-width: 200px){
-    body{
+    #bruh{
       
         width: 180px;
         height: 400px;
@@ -172,14 +174,14 @@
 }
 
 @media (max-width: 115px){
-   body{
+    #bruh{
        
         height: 600px;
     }
 }
 
 @media(max-width: 70px){
-    body{
+    #bruh{
         height: 800px;
     }
 }
