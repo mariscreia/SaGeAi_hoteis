@@ -153,35 +153,20 @@
   footer{margin-top:auto;padding:22px;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02)}
 
   /* responsivo */
-@media (max-width: 667px){
 
-    @media (max-width: 667px){
-
-    #bruh{
-     
-        width: 200px;
-        height: 200px;
-    }
-
+@media (max-width: 900px) {
+  #res {
+    flex-direction: column; /* imagem em cima, texto embaixo */
+  }
 }
 
-@media (max-width: 200px){
-    #bruh{
-      
-        width: 180px;
-        height: 400px;
-    }
+@media (max-width: 600px) {
+  #res {
+    flex-direction: column; /* imagem em cima, texto embaixo */
+  }
 }
-
-@media (max-width: 115px){
-    #bruh{
-       
-        height: 600px;
-    }
-}
-
-@media(max-width: 70px){
-    #bruh{
-        height: 800px;
-    }
+@media (max-width: 400px) {
+  #res {
+    flex-direction: column; /* imagem em cima, texto embaixo */
+  }
 }
