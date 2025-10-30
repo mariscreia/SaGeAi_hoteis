@@ -153,8 +153,33 @@
   footer{margin-top:auto;padding:22px;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02)}
 
   /* responsivo */
-  @media (max-width:800px){
-    nav ul{display:none}
-    .two-col{grid-template-columns:1fr}
-    .hero-right{width:100%}
-  }
+@media (max-width: 667px){
+
+    body{
+     
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 200px){
+    body{
+      
+        width: 180px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 115px){
+   body{
+       
+        height: 600px;
+    }
+}
+
+@media(max-width: 70px){
+    body{
+        height: 800px;
+    }
+}
