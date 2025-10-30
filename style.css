@@ -134,9 +134,8 @@
   
   section.info{max-width:1140px;margin:18px auto;padding:18px;background:transparent;border-radius:10px}
   .container {
-  display: flex; /* faz os elementos ficarem lado a lado */
-  align-items: center; /* alinha verticalmente */
-  gap: 20px;}
+    flex-direction: column; /* coloca imagem em cima e texto embaixo */
+    text-align: center;
   
 
  .nos img { width: 300px; height: 250px; }
@@ -156,7 +155,9 @@
 
 @media (max-width: 900px) {
   #res {
-    flex-direction: column; /* imagem em cima, texto embaixo */
+    flex-direction: column;/* imagem em cima, texto embaixo */
+     width: 200px;
+    height: 200px;
   }
 }
 
