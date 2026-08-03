@@ -1,109 +1,357 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Hotel Rosewood</title>
 
-<!-- Fonte simples -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hotel Rosewood | SaGeAi</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="rosewood.css">
 
+<link rel="stylesheet" href="style.css">
 
 </head>
 
+
+
 <body>
 
-  <header>
-    <div class="nav">
-      <div class="brand">
-        <div class="logo"><img src="img/logo.png" alt=""></div>
-        <div>
-          <h1 style="font-size:16px;margin:0">Top Hotéis do Brasil</h1>
-          <div style="font-size:12px;color:var(--muted)">Guia — Hotéis & Turismo</div>
+
+
+<header>
+
+<div class="nav">
+
+
+    <div class="brand">
+
+
+        <div class="logo">
+
+            <img src="img/logo.png" alt="Logo SaGeAi">
+
         </div>
-      </div>
 
-      <nav aria-label="Menu principal">
-        <ul>
-          <li><a href="index.html#home">Home</a></li>
-          <li><a href="index.html#sobre">Sobre</a></li>
-          <li><a href="index.html#contatos">Contatos</a></li>
-        <li><a href="index.html#home">>Voltar</a> <a href="valle.html">>Prox</a></li>
-        </ul>
-      </nav>
 
-      <div class="searchbox" role="search">
-        <input id="filtro" type="text" placeholder="Pesquisar hotel (nome / cidade)..." aria-label="Pesquisar hotéis">
-        <button id="btnSearch" title="Pesquisar">🔎</button>
-      </div>
+
+        <div>
+
+            <h1 class="titulo-logo">
+                SaGeAi
+            </h1>
+
+
+            <span class="subtitulo-logo">
+                Guia — Hotéis & Turismo
+            </span>
+
+
+        </div>
+
+
     </div>
-  </header>
-
-  <main>
-
-    <!-- HERO -->
-    <section  class="hero" aria-labelledby="hero-title">
-      <h2 id="hero-title">Rosewood</h2>
-      <h3 id="titulo">Hotel Rosewood</h3>
-    </section>
-
-    <section class="texto">
-
-      <p>
-        Erguido no coração da maior metrópole do país, o Rosewood São Paulo é uma obra-prima arquitetônica que combina a restauração de
-        um prédio histórico com uma torre de design arrojado. A atmosfera do hotel é vibrante, artística e luxuosa, refletindo a alma criativa da cidade.
-        Obras de artistas brasileiros se espalham pelos ambientes, transformando o hotel em uma verdadeira galeria de arte contemporânea.
-      </p>
-
-    </section>
 
 
-    <section class="a">
 
-      <div class="gastro"><img src="img/rosewood.gastronomia.webp" alt=""></div>
 
-      <p>
-        <strong>Gastronomia</strong> 
-        O Rosewood abriga uma coleção impressionante de restaurantes e bares, que vão desde a cozinha autoral 
-        internacional até releituras sofisticadas da culinária brasileira. Os hóspedes podem saborear desde menus degustação elaborados por chefs premiados até pratos que celebram ingredientes locais. 
-        O rooftop conta ainda com um bar exclusivo, ideal para coquetéis ao entardecer com vista panorâmica da cidade.
-      </p>
 
-    </section>
+    <nav aria-label="Menu principal">
 
-    <section class="b">
+        <ul>
 
-      <p>
-        <strong>Acomodação</strong>
-        Os quartos e suítes seguem um padrão de sofisticação contemporânea. O design é moderno, mas acolhedor, mesclando tecnologia de ponta com materiais naturais. Camas espaçosas, banheiros de mármore e janelas amplas proporcionam uma sensação de amplitude e conforto.
-        Algumas suítes oferecem terraços privativos com vista espetacular da metrópole paulistana.
-      </p>
 
-      <div class="gastro"><img src="img/rosewood.acomodacao.webp" alt=""></div>
+            <li>
+                <a href="index.html#home">
+                    Home
+                </a>
+            </li>
 
-    </section>
 
-    <section class="c">
+            <li>
+                <a href="index.html#sobre">
+                    Sobre
+                </a>
+            </li>
 
-      <div class="gastro"><img src="img/rosewood.atrativos.webp" alt=""></div>
 
-        <p>
-          <strong>Atrativos</strong>
-          O hotel é praticamente um destino em si: possui um rooftop com piscina de borda infinita, spa de classe mundial, bares intimistas e espaços que recebem eventos culturais, musicais e artísticos. 
-          Além disso, sua localização estratégica coloca os hóspedes a poucos passos da vibrante cena gastronômica, cultural e noturna de São Paulo.
-        </p>
+            <li>
+                <a href="index.html#contatos">
+                    Contatos
+                </a>
+            </li>
 
-    </section>
 
-  
+            <li>
+                <a href="index.html#home">
+                    Voltar
+                </a>
+            </li>
 
-  </main>
-</body>
+
+            <li>
+                <a href="valle.html">
+                    Próximo
+                </a>
+            </li>
+
+
+        </ul>
+
+
+    </nav>
+
+
+
+
+
+
+    <div class="searchbox">
+
+
+        <input
+        id="filtro"
+        type="text"
+        placeholder="Pesquisar hotel (nome/cidade)"
+        aria-label="Pesquisar hotéis">
+
+
+
+        <button id="btnSearch">
+            🔎
+        </button>
+
+
+    </div>
+
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+
+<main>
+
+
+
+
+
+<section class="hotel-hero">
+
+
+<h2 class="hotel-local">
+    Rosewood
+</h2>
+
+
+<h3 class="hotel-nome">
+    Hotel Rosewood
+</h3>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="hotel-texto">
+
+
+<p>
+
+Erguido no coração da maior metrópole do país, o Rosewood São Paulo é
+uma obra-prima arquitetônica que combina a restauração de um prédio
+histórico com uma torre de design arrojado.
+
+A atmosfera do hotel é vibrante, artística e luxuosa, refletindo a alma
+criativa da cidade.
+
+Obras de artistas brasileiros se espalham pelos ambientes, transformando
+o hotel em uma verdadeira galeria de arte contemporânea.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="hotel-info">
+
+
+
+<img
+src="img/rosewood.gastronomia.webp"
+alt="Gastronomia do Hotel Rosewood">
+
+
+
+<div>
+
+
+<h3>
+Gastronomia
+</h3>
+
+
+<p>
+
+O Rosewood abriga uma coleção impressionante de restaurantes e bares,
+que vão desde a cozinha autoral internacional até releituras sofisticadas
+da culinária brasileira.
+
+Os hóspedes podem saborear menus degustação elaborados por chefs
+premiados e pratos que celebram ingredientes locais.
+
+O rooftop conta ainda com um bar exclusivo, ideal para coquetéis ao
+entardecer com vista panorâmica da cidade.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="hotel-info reverse">
+
+
+
+<div>
+
+
+<h3>
+Acomodação
+</h3>
+
+
+<p>
+
+Os quartos e suítes seguem um padrão de sofisticação contemporânea.
+
+O design é moderno, mas acolhedor, mesclando tecnologia de ponta com
+materiais naturais.
+
+Camas espaçosas, banheiros de mármore e janelas amplas proporcionam
+uma sensação de amplitude e conforto.
+
+Algumas suítes oferecem terraços privativos com vista espetacular da
+metrópole paulistana.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<img
+src="img/rosewood.acomodacao.webp"
+alt="Acomodação do Hotel Rosewood">
+
+
+
+</section>
+
+
+
+
+
+
+
+<section class="hotel-info">
+
+
+
+<img
+src="img/rosewood.atrativos.webp"
+alt="Atrativos do Hotel Rosewood">
+
+
+
+<div>
+
+
+<h3>
+Atrativos
+</h3>
+
+
+<p>
+
+O hotel é praticamente um destino em si: possui um rooftop com piscina de
+borda infinita, spa de classe mundial, bares intimistas e espaços que
+recebem eventos culturais, musicais e artísticos.
+
+Além disso, sua localização estratégica coloca os hóspedes próximos da
+vibrante cena gastronômica, cultural e noturna de São Paulo.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
 
 <footer>
-  <div>© <span id="ano"></span> Top Hotéis do Brasil — Todos os direitos reservados</div>
+
+
+<div>
+
+© <span id="ano"></span>
+SaGeAi — Guia de Hotéis & Turismo
+
+</div>
+
+
 </footer>
 
 
+
+
+
+</body>
+
 </html>
+```
