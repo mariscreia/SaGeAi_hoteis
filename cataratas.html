@@ -1,116 +1,301 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Hotel das Cataratas</title>
 
-<!-- Fonte simples -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hotel das Cataratas | SaGeAi</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="cataratas.css">
 
+<link rel="stylesheet" href="style.css">
 
 </head>
+
+
 <body>
 
-  <header>
+
+<header>
+
     <div class="nav">
-      <div class="brand">
-        <div class="logo" id=""><img src="img/logo.png" alt=""></div>
-        <div>
-          <h1 style="font-size:16px;margin:0">Top Hotéis do Brasil</h1>
-          <div style="font-size:12px;color:var(--muted)">Guia — Hotéis & Turismo</div>
+
+        <div class="brand">
+
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo SaGeAi">
+            </div>
+
+
+            <div>
+
+                <h1 class="titulo-logo">
+                    SaGeAi
+                </h1>
+
+                <span class="subtitulo-logo">
+                    Guia — Hotéis & Turismo
+                </span>
+
+            </div>
+
+
         </div>
-      </div>
 
-      <nav aria-label="Menu principal">
-        <ul>
-          <li><a href="index.html#home">Home</a></li>
-          <li><a href="index.html#sobre">Sobre</a></li>
-          <li><a href="index.html#contatos">Contatos</a></li>
-        <li><a href="index.html#home">>Voltar</a> <a href="nannai.html">>Prox</a></li>
-        </ul>
-      </nav>
 
-      <div class="searchbox" role="search">
-        <input id="filtro" type="text" placeholder="Pesquisar hotel (nome / cidade)..." aria-label="Pesquisar hotéis">
-        <button id="btnSearch" title="Pesquisar">🔎</button>
-      </div>
+
+        <nav aria-label="Menu principal">
+
+            <ul>
+
+                <li>
+                    <a href="index.html#home">
+                        Home
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="index.html#sobre">
+                        Sobre
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="index.html#contatos">
+                        Contatos
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="index.html#home">
+                        Voltar
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="nannai.html">
+                        Próximo
+                    </a>
+                </li>
+
+            </ul>
+
+
+        </nav>
+
+
+
+
+        <div class="searchbox">
+
+            <input 
+            id="filtro"
+            type="text"
+            placeholder="Pesquisar hotel (nome/cidade)"
+            aria-label="Pesquisar hotéis">
+
+
+            <button id="btnSearch">
+                🔎
+            </button>
+
+
+        </div>
+
+
     </div>
-  </header>
-
-  <main>
-
-    <!-- HERO -->
-    <section  class="hero" aria-labelledby="hero-title">
-      <h2 id="hero-title">Cataratas</h2>
-      <h3 id="titulo">Hotel das Cataratas</h3>
-    </section>
-
-    <section class="texto">
-
-      <p>
-
-        Imagine acordar cercado pelo som da floresta e, ao abrir a janela, estar diante de uma das sete maravilhas naturais do mundo: 
-        as Cataratas do Iguaçu. O Hotel das Cataratas é um refúgio colonial português em meio à selva, com arquitetura elegante, jardins impecáveis e 
-        uma atmosfera que mistura romantismo e exclusividade. Sua localização dentro do Parque Nacional torna o ambiente ainda mais especial, transmitindo 
-        uma sensação única de paz e contato íntimo com a natureza.
-      
-      </p>
-
-    </section>
 
 
-    <section class="a">
+</header>
 
-      <div class="gastro"><img src="img/cataratas.gastronomia.webp" alt=""></div>
 
-      <p>
-        <strong>Gastronomia</strong>
-        O hotel oferece experiências gastronômicas dignas de grandes centros urbanos, mas com o charme da floresta como pano de fundo. O Restaurante Itaipu encanta com pratos brasileiros 
-        contemporâneos e internacionais, preparados com ingredientes frescos e sofisticados. No Bar Tarobá, os hóspedes podem degustar coquetéis autorais enquanto assis
-        tem ao pôr do sol sobre a mata.
-      </p>
 
-    </section>
 
-    <section class="b">
+<main>
 
-      <p>
-        <strong>Acomodação</strong>
-        Os quartos são um convite ao conforto, com decoração clássica, móveis de
-        madeira maciça e tecidos nobres. Muitas suítes oferecem vistas diretas para a natureza exuberante, e algumas contam com varandas privativas. 
-        A combinação entre tradição e luxo cria um ambiente acolhedor e requintado.
-      </p>
 
-      <div class="gastro"><img src="img/cataratas.acomodacao.webp" alt=""></div>
 
-    </section>
+<section class="hotel-hero">
 
-    <section class="c">
+    <h2 class="hotel-local">
+        Cataratas
+    </h2>
 
-      <div class="gastro"><img src="img/cataratas.atrativos.webp" alt=""></div>
+
+    <h3 class="hotel-nome">
+        Hotel das Cataratas
+    </h3>
+
+
+</section>
+
+
+
+
+
+<section class="hotel-texto">
+
+    <p>
+
+        Imagine acordar cercado pelo som da floresta e, ao abrir a janela,
+        estar diante de uma das sete maravilhas naturais do mundo:
+        as Cataratas do Iguaçu.
+
+        O Hotel das Cataratas é um refúgio colonial português em meio à
+        selva, com arquitetura elegante, jardins impecáveis e uma atmosfera
+        que mistura romantismo e exclusividade.
+
+        Sua localização dentro do Parque Nacional torna o ambiente ainda
+        mais especial, transmitindo uma sensação única de paz e contato
+        íntimo com a natureza.
+
+    </p>
+
+
+</section>
+
+
+
+
+
+<section class="hotel-info">
+
+
+    <img 
+    src="img/cataratas.gastronomia.webp"
+    alt="Gastronomia do Hotel das Cataratas">
+
+
+    <div>
+
+        <h3>
+            Gastronomia
+        </h3>
+
 
         <p>
-          <strong>Atrativos</strong>
-          Além do acesso exclusivo às Cataratas 
-          fora do horário de visitação, o hotel conta com uma belíssima piscina ao ar livre cercada 
-          por palmeiras, spa de inspiração amazônica e passeios guiados pela fauna e flora do parque. A experiência é completada por atividades 
-          como observação de aves, caminhadas ecológicas e degustações temáticas.
+
+            O hotel oferece experiências gastronômicas dignas de grandes
+            centros urbanos, mas com o charme da floresta como pano de fundo.
+
+            O Restaurante Itaipu encanta com pratos brasileiros contemporâneos
+            e internacionais, preparados com ingredientes frescos e sofisticados.
+
+            No Bar Tarobá, os hóspedes podem degustar coquetéis autorais
+            enquanto apreciam o pôr do sol sobre a mata.
+
+        </p>
+
+    </div>
+
+
+</section>
+
+
+
+
+
+<section class="hotel-info reverse">
+
+
+    <div>
+
+        <h3>
+            Acomodação
+        </h3>
+
+
+        <p>
+
+            Os quartos são um convite ao conforto, com decoração clássica,
+            móveis de madeira maciça e tecidos nobres.
+
+            Muitas suítes oferecem vistas diretas para a natureza exuberante,
+            e algumas contam com varandas privativas.
+
+            A combinação entre tradição e luxo cria um ambiente acolhedor
+            e requintado.
+
         </p>
 
 
+    </div>
 
-    </section>
 
-  
 
-  </main>
-</body>
+    <img
+    src="img/cataratas.acomodacao.webp"
+    alt="Acomodação do Hotel das Cataratas">
+
+
+</section>
+
+
+
+
+
+<section class="hotel-info">
+
+
+    <img
+    src="img/cataratas.atrativos.webp"
+    alt="Atrativos do Hotel das Cataratas">
+
+
+    <div>
+
+
+        <h3>
+            Atrativos
+        </h3>
+
+
+        <p>
+
+            Além do acesso exclusivo às Cataratas fora do horário de visitação,
+            o hotel conta com uma belíssima piscina ao ar livre cercada por
+            palmeiras, spa de inspiração amazônica e passeios guiados pela
+            fauna e flora do parque.
+
+            A experiência é completada por atividades como observação de aves,
+            caminhadas ecológicas e degustações temáticas.
+
+        </p>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+</main>
+
+
+
+
 
 <footer>
-  <div>© <span id="ano"></span> Top Hotéis do Brasil — Todos os direitos reservados</div>
+
+    <div>
+        © <span id="ano"></span>
+        SaGeAi — Guia de Hotéis & Turismo
+    </div>
+
+
 </footer>
 
 
+
+</body>
+
 </html>
+
