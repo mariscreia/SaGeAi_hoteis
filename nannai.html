@@ -1,111 +1,345 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Nannai Resort & Spa</title>
 
-<!-- Fonte simples -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nannai Resort & Spa | SaGeAi</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="nannai.css">
 
+<link rel="stylesheet" href="style.css">
 
 </head>
+
+
+
 <body>
 
-  <header>
-    <div class="nav">
-      <div class="brand">
-        <div class="logo"><img src="img/logo.png" alt=""></div>
-        <div>
-          <h1 style="font-size:16px;margin:0">Top Hotéis do Brasil</h1>
-          <div style="font-size:12px;color:var(--muted)">Guia — Hotéis & Turismo</div>
+
+<header>
+
+<div class="nav">
+
+
+    <div class="brand">
+
+
+        <div class="logo">
+
+            <img src="img/logo.png" alt="Logo SaGeAi">
+
         </div>
-      </div>
 
-      <nav aria-label="Menu principal">
-        <ul>
-          <li><a href="index.html#home">Home</a></li>
-          <li><a href="index.html#sobre">Sobre</a></li>
-          <li><a href="index.html#contatos">Contatos</a></li>
-        <li><a href="index.html#home">>Voltar</a> </li>
-        </ul>
-      </nav>
 
-      <div class="searchbox" role="search">
-        <input id="filtro" type="text" placeholder="Pesquisar hotel (nome / cidade)..." aria-label="Pesquisar hotéis">
-        <button id="btnSearch" title="Pesquisar">🔎</button>
-      </div>
+
+        <div>
+
+
+            <h1 class="titulo-logo">
+                SaGeAi
+            </h1>
+
+
+            <span class="subtitulo-logo">
+                Guia — Hotéis & Turismo
+            </span>
+
+
+        </div>
+
+
     </div>
-  </header>
-
-  <main>
-
-    <!-- HERO -->
-    <section  class="hero" aria-labelledby="hero-title">
-      <h2 id="hero-title">Nannai</h2>
-      <h3 id="titulo">Nannai Resort & Spa</h3>
-    </section>
-
-    <section class="texto">
-
-      <p>
-
-        À beira da deslumbrante Praia de Muro Alto, o Nannai Resort é um dos destinos mais exclusivos do Nordeste. Com uma arquitetura que se integra à paisagem tropical, o resort se destaca pelos bangalôs privativos cercados por jardins e piscinas cristalinas. O ambiente é ao mesmo tempo sofisticado e relaxante, ideal para quem 
-        busca privacidade e tranquilidade em um paraíso natural.
-      
-      </p>
-
-    </section>
 
 
-    <section class="a">
 
-      <div class="gastro"><img src="img/nannai.gastronomia.webp"></div>
 
-      <p>
-        
-        <strong>Gastronomia</strong>
-        O restaurante principal combina ingredientes frescos da região com técnicas da alta gastronomia internacional. Frutos do mar são protagonistas em muitos pratos, sempre preparados de forma criativa e sofisticada. Há também bares espalhados pelo resort, perfeitos para coquetéis
-        à beira da piscina ou degustações mais intimistas.
 
-      </p>
+    <nav aria-label="Menu principal">
 
-    </section>
 
-    <section class="b">
+        <ul>
 
-        <p>
-          <strong>Acomodação</strong>
-          O grande destaque são os bangalôs com piscina privativa, que oferecem uma experiência única de exclusividade e conforto. 
-          Todos os quartos têm decoração clean e elegante, com toques tropicais, varandas com redes e vistas privilegiadas para o mar ou jardins.
-        </p>
 
-      <div class="gastro"><img src="img/nannai.acomodacoes.webp"></div>
+            <li>
+                <a href="index.html#home">
+                    Home
+                </a>
+            </li>
 
-    </section>
 
-    <section class="c">
+            <li>
+                <a href="index.html#sobre">
+                    Sobre
+                </a>
+            </li>
 
-      <div class="gastro"><img src="img/nannai,atrativos.webp" alt=""></div>
 
-        <p>
-          <strong>Atrativos</strong>
-          Além das piscinas espalhadas pelo resort, os hóspedes podem desfrutar de um spa completo 
-          com terapias relaxantes, esportes aquáticos, academia e até mesmo passeios de catamarã. O resort 
-          também oferece atividades culturais, trilhas e experiências voltadas para o bem-estar.
-        </p>
+            <li>
+                <a href="index.html#contatos">
+                    Contatos
+                </a>
+            </li>
 
-    </section>
 
-  
+            <li>
+                <a href="index.html#home">
+                    Voltar
+                </a>
+            </li>
 
-  </main>
-</body>
+
+        </ul>
+
+
+    </nav>
+
+
+
+
+
+    <div class="searchbox">
+
+
+        <input
+        id="filtro"
+        type="text"
+        placeholder="Pesquisar hotel (nome/cidade)"
+        aria-label="Pesquisar hotéis">
+
+
+
+        <button id="btnSearch">
+            🔎
+        </button>
+
+
+    </div>
+
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+<main>
+
+
+
+
+
+<section class="hotel-hero">
+
+
+    <h2 class="hotel-local">
+        Nannai
+    </h2>
+
+
+    <h3 class="hotel-nome">
+        Nannai Resort & Spa
+    </h3>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="hotel-texto">
+
+
+<p>
+
+
+À beira da deslumbrante Praia de Muro Alto, o Nannai Resort é um dos
+destinos mais exclusivos do Nordeste.
+
+Com uma arquitetura que se integra à paisagem tropical, o resort se
+destaca pelos bangalôs privativos cercados por jardins e piscinas
+cristalinas.
+
+O ambiente é sofisticado e relaxante, ideal para quem busca privacidade
+e tranquilidade em um paraíso natural.
+
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="hotel-info">
+
+
+<img 
+src="img/nannai.gastronomia.webp"
+alt="Gastronomia do Nannai Resort">
+
+
+<div>
+
+
+<h3>
+Gastronomia
+</h3>
+
+
+<p>
+
+
+O restaurante principal combina ingredientes frescos da região com
+técnicas da alta gastronomia internacional.
+
+Frutos do mar são protagonistas em muitos pratos, preparados de forma
+criativa e sofisticada.
+
+Há também bares espalhados pelo resort, perfeitos para coquetéis à beira
+da piscina ou degustações mais intimistas.
+
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="hotel-info reverse">
+
+
+
+<div>
+
+
+<h3>
+Acomodação
+</h3>
+
+
+
+<p>
+
+
+O grande destaque são os bangalôs com piscina privativa, que oferecem
+uma experiência única de exclusividade e conforto.
+
+Todos os quartos possuem decoração clean e elegante, com toques tropicais,
+varandas com redes e vistas privilegiadas para o mar ou jardins.
+
+
+</p>
+
+
+</div>
+
+
+
+
+<img
+src="img/nannai.acomodacoes.webp"
+alt="Acomodações do Nannai Resort">
+
+
+</section>
+
+
+
+
+
+
+
+<section class="hotel-info">
+
+
+<img
+src="img/nannai,atrativos.webp"
+alt="Atrativos do Nannai Resort">
+
+
+
+<div>
+
+
+<h3>
+Atrativos
+</h3>
+
+
+<p>
+
+
+Além das piscinas espalhadas pelo resort, os hóspedes podem desfrutar
+de um spa completo com terapias relaxantes, esportes aquáticos, academia
+e passeios de catamarã.
+
+O resort também oferece atividades culturais, trilhas e experiências
+voltadas para o bem-estar.
+
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+</main>
+
+
+
+
+
+
 
 <footer>
-  <div>© <span id="ano"></span> Top Hotéis do Brasil — Todos os direitos reservados</div>
+
+
+<div>
+
+© <span id="ano"></span>
+SaGeAi — Guia de Hotéis & Turismo
+
+</div>
+
+
 </footer>
 
 
+
+
+
+</body>
+
 </html>
+```
