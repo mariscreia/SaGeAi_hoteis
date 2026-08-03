@@ -1,173 +1,380 @@
+/* ===========================
+   CONFIGURAÇÕES GERAIS
+=========================== */
 
-  *{
-    
-    scroll-behavior: smooth;
-  }
-  
-  :root{
+:root{
     --bg:#0f1724;
     --card:#0b1220;
     --accent:#ff6b6b;
     --muted:#94a3b8;
-    --glass: rgba(255,255,255,0.04);
-  }
+    --glass:rgba(255,255,255,.04);
+}
 
-  *{box-sizing:border-box}
-  body{
+*{
     margin:0;
-    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    background: linear-gradient(180deg, #071025 0%, #07172b 60%, #0b1220 100%);
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Inter",sans-serif;
+    background:linear-gradient(180deg,#071025 0%,#07172b 60%,#0b1220 100%);
     color:#e6eef8;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
     min-height:100vh;
     display:flex;
     flex-direction:column;
-    
-  }
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
 
-  /* header / nav */
-  header{
+/* ===========================
+   HEADER
+=========================== */
+
+header{
     position:sticky;
     top:0;
     z-index:50;
-    backdrop-filter: blur(6px);
-    background: linear-gradient(90deg, rgba(11,18,32,0.6), rgba(11,18,32,0.35));
-    border-bottom: 1px solid rgba(255,255,255,0.03);
-  }
-  .nav{
-    max-width:1140px;
-    margin:0 auto;
-    display:flex;
-    gap:16px;
-    align-items:center;
-    padding:14px;
-  }
-  .brand{
-    display:flex;
-    gap:12px;
-    align-items:center;
-  }
-  .logo{
+    backdrop-filter:blur(6px);
+    background:linear-gradient(90deg,rgba(11,18,32,.6),rgba(11,18,32,.35));
+    border-bottom:1px solid rgba(255,255,255,.03);
+}
 
-    background:linear-gradient(135deg, var(--accent), #ffd166);
+.nav{
+    max-width:1140px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    gap:16px;
+    padding:14px;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo{
+    background:linear-gradient(135deg,var(--accent),#ffd166);
     border-radius:8px;
     display:flex;
-    align-items:center;
     justify-content:center;
-    font-weight:700;
-    color:#071025;
-    box-shadow: 0 6px 20px rgba(255,107,107,0.12);
-  }
+    align-items:center;
+    box-shadow:0 6px 20px rgba(255,107,107,.12);
+}
 
-  img{width: 40px; height: 40px; border-radius: 8px;}
-  
-  
-  
-  .brand h1{font-size:18px;margin:0}
-  nav ul{list-style:none;margin:0;padding:0;display:flex;gap:12px;align-items:center;margin-left:18px}
-  nav a{color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:6px;font-weight:600}
-  nav a:hover{color:#fff;background:var(--glass)}
+.logo img{
+    width:40px;
+    height:40px;
+    border-radius:8px;
+}
 
-  .searchbox{
+.brand h1{
+    font-size:18px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:12px;
+    margin-left:18px;
+}
+
+nav a{
+    color:var(--muted);
+    text-decoration:none;
+    padding:6px 10px;
+    border-radius:6px;
+    font-weight:600;
+    transition:.2s;
+}
+
+nav a:hover{
+    background:var(--glass);
+    color:white;
+}
+
+/* ===========================
+   PESQUISA
+=========================== */
+
+.searchbox{
     margin-left:auto;
     display:flex;
     gap:8px;
     align-items:center;
-  }
-  .searchbox input{
-    background:transparent;border:1px solid rgba(255,255,255,0.06);
-    color: #dbeafe;padding:8px 12px;border-radius:8px;
-    min-width:160px;
-  }
-  .searchbox button{
-    background:var(--accent);border:none;color:#071025;padding:8px 12px;border-radius:8px;font-weight:700;cursor:pointer;
-  }
+}
 
-  /* hero */
-  .hero{
-    max-width:1140px;margin:28px auto;padding:18px;
-    text-align: center;
-    background-image: url("img/fundo.jpg");
-    background-size: cover;     
-    height: 7cm;     
+.searchbox input{
+    background:transparent;
+    border:1px solid rgba(255,255,255,.06);
+    color:white;
+    padding:8px 12px;
+    border-radius:8px;
+    width:220px;
+    max-width:100%;
+}
 
-  }
-  .hero-left{flex:1;min-width:260px}
-  .hero h2{font-size:28px;margin:0 0 8px; margin-top: 3cm; color: #ffffff;}
-  .hero p{color:var(--muted);margin:0 0 12px;line-height:1.45; color: #ffffff;}
-  .cta{display:inline-block;background:var(--accent);color:#071025;padding:10px 14px;border-radius:8px;font-weight:700;text-decoration:none}
+.searchbox button{
+    background:var(--accent);
+    border:none;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
 
-  .hero-right{width:320px;min-width:220px;border-radius:12px;overflow:hidden;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);box-shadow:0 8px 30px rgba(2,6,23,0.6)}
-  .hero-right img{width:100%;height:100%;display:block;object-fit:cover}
+/* ===========================
+   HERO
+=========================== */
 
-  /* grid de hotéis */
-  .grid{
-    max-width:1140px;margin:10px auto;padding:18px;
+.hero{
+    max-width:1140px;
+    margin:30px auto;
+    padding:40px 20px;
+    min-height:350px;
+
+    background-image:url("img/fundo.jpg");
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h2{
+    color:white;
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:white;
+    max-width:700px;
+    line-height:1.5;
+    margin-bottom:20px;
+}
+
+.cta{
+    display:inline-block;
+    padding:10px 18px;
+    background:var(--accent);
+    color:#071025;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* ===========================
+   HOTÉIS
+=========================== */
+
+.grid{
+    max-width:1140px;
+    margin:auto;
+    padding:18px;
+
     display:grid;
-    grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+    grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
     gap:18px;
-  }
+}
 
-  .hotel{
-    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-    border:1px solid rgba(255,255,255,0.03);
+.hotel{
+    background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));
+    border:1px solid rgba(255,255,255,.03);
     border-radius:12px;
     overflow:hidden;
-    transition: transform .18s ease, box-shadow .18s ease;
-  }
-  .hotel:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(2,6,23,0.6)}
-  .hotel img{width:100%;height:160px;object-fit:cover;display:block}
-  .hotel-body{padding:12px}
-  .hotel h3{margin:0 0 6px;font-size:18px}
-  .meta{color:var(--muted);font-size:14px;margin-bottom:8px}
-  .badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}
-  .badge{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:999px;font-weight:600;color:var(--muted);font-size:13px}
-
-  .actions{display:flex;gap:8px;align-items:center;margin-top:8px}
-  .btn {flex:unset;padding:8px;border-radius:8px;border:none;cursor:pointer;font-weight:700}
-  .btn.contact { text-decoration: none; background:#0ea5a0;color:#021c1b;}
-  .btn.details{text-decoration: none; background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
-
-
-
-  
-  section.info{max-width:1140px;margin:18px auto;padding:18px;background:transparent;border-radius:10px}
-  .container {
-    flex-direction: column; /* coloca imagem em cima e texto embaixo */
-    text-align: center;
-  
-
- .nos img { width: 300px; height: 250px; }
-
-  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-  label{display:block;font-weight:700;margin-bottom:6px}
-  input[type=text], input[type=email], textarea{
-    width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:#e6eef8;
-  }
-  textarea{min-height:120px}
-
-
-  /* footer */
-  footer{margin-top:auto;padding:22px;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02)}
-
-  /* responsivo */
-
-@media (max-width: 900px) {
-  #res {
-    flex-direction: column;/* imagem em cima, texto embaixo */
-     width: 200px;
-    height: 200px;
-  }
+    transition:.2s;
 }
 
-@media (max-width: 600px) {
-  #res {
-    flex-direction: column; /* imagem em cima, texto embaixo */
-  }
+.hotel:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 40px rgba(0,0,0,.5);
 }
-@media (max-width: 400px) {
-  #res {
-    flex-direction: column; /* imagem em cima, texto embaixo */
-  }
+
+.hotel img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+}
+
+.hotel-body{
+    padding:12px;
+}
+
+.hotel h3{
+    margin-bottom:8px;
+}
+
+.meta{
+    color:var(--muted);
+    font-size:14px;
+    margin-bottom:8px;
+}
+
+.badges{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-bottom:10px;
+}
+
+.badge{
+    background:rgba(255,255,255,.04);
+    color:var(--muted);
+    padding:6px 10px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+.actions{
+    display:flex;
+    gap:8px;
+}
+
+.btn{
+    padding:8px 12px;
+    border-radius:8px;
+    font-weight:bold;
+    text-decoration:none;
+    transition:.2s;
+}
+
+.btn:hover{
+    opacity:.9;
+}
+
+.contact{
+    background:#0ea5a0;
+    color:#031d1b;
+}
+
+.details{
+    border:1px solid rgba(255,255,255,.08);
+    color:var(--muted);
+    background:transparent;
+}
+
+/* ===========================
+   SOBRE
+=========================== */
+
+.info{
+    max-width:1140px;
+    margin:25px auto;
+    padding:18px;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:20px;
+}
+
+.nos img{
+    width:300px;
+    max-width:100%;
+    height:auto;
+    border-radius:10px;
+}
+
+/* ===========================
+   CONTATO
+=========================== */
+
+.two-col{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+label{
+    display:block;
+    margin-bottom:6px;
+    font-weight:bold;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid rgba(255,255,255,.08);
+    background:transparent;
+    color:white;
+}
+
+textarea{
+    min-height:120px;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    margin-top:auto;
+    text-align:center;
+    padding:25px;
+    color:var(--muted);
+    border-top:1px solid rgba(255,255,255,.03);
+}
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+@media(max-width:900px){
+
+    .nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-left:0;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .searchbox{
+        width:100%;
+        margin-left:0;
+    }
+
+    .searchbox input{
+        width:100%;
+    }
+
+    .two-col{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hero{
+        min-height:260px;
+        padding:30px 15px;
+    }
+
+    .hero h2{
+        font-size:1.7rem;
+    }
+
+    .hero p{
+        font-size:.95rem;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
 }
