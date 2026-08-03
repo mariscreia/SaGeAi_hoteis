@@ -1,114 +1,326 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Belmond Copacabana Palace</title>
 
-<!-- Fonte simples -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Belmond Copacabana Palace | SaGeAi</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="copacabana.css">
 
+<link rel="stylesheet" href="style.css">
 
 </head>
+
+
 <body>
 
+
 <header>
-  <div class="nav">
+
+<div class="nav">
+
+
     <div class="brand">
-      <div class="logo"><img src="img/logo.png" alt=""></div>
-      <div>
-        <h1 style="font-size:16px;margin:0">Top Hotéis do Brasil</h1>
-        <div style="font-size:12px;color:var(--muted)">Guia — Hotéis & Turismo</div>
-      </div>
+
+        <div class="logo">
+
+            <img src="img/logo.png" alt="Logo SaGeAi">
+
+        </div>
+
+
+        <div>
+
+            <h1 class="titulo-logo">
+                SaGeAi
+            </h1>
+
+
+            <span class="subtitulo-logo">
+                Guia — Hotéis & Turismo
+            </span>
+
+        </div>
+
+
     </div>
+
+
+
 
     <nav aria-label="Menu principal">
-      <ul>
-        <li><a href="index.html#home">Home</a></li>
-        <li><a href="index.html#sobre">Sobre</a></li>
-        <li><a href="index.html#contatos">Contatos</a></li>
-        <li><a href="index.html#home">>Voltar</a> <a href="rosewood.html">>Prox</a></li>
-      </ul>
+
+        <ul>
+
+            <li>
+                <a href="index.html#home">
+                    Home
+                </a>
+            </li>
+
+
+            <li>
+                <a href="index.html#sobre">
+                    Sobre
+                </a>
+            </li>
+
+
+            <li>
+                <a href="index.html#contatos">
+                    Contatos
+                </a>
+            </li>
+
+
+            <li>
+                <a href="index.html#home">
+                    Voltar
+                </a>
+            </li>
+
+
+            <li>
+                <a href="rosewood.html">
+                    Próximo
+                </a>
+            </li>
+
+
+        </ul>
+
+
     </nav>
 
-    <div class="searchbox" role="search">
-      <input id="filtro" type="text" placeholder="Pesquisar hotel (nome / cidade)..." aria-label="Pesquisar hotéis">
-      <button id="btnSearch" title="Pesquisar">🔎</button>
+
+
+
+
+    <div class="searchbox">
+
+
+        <input
+        id="filtro"
+        type="text"
+        placeholder="Pesquisar hotel (nome/cidade)"
+        aria-label="Pesquisar hotéis">
+
+
+
+        <button id="btnSearch">
+            🔎
+        </button>
+
+
     </div>
-  </div>
+
+
+</div>
+
+
 </header>
+
+
+
+
 
 <main>
 
-  <!-- HERO -->
-  <section  class="hero" aria-labelledby="hero-title">
-    <h2 id="hero-title">Copacabana</h2>
-    <h3 id="titulo">Belmond Copacabana Palace</h3>
-  </section>
-
-  <section class="texto">
-
-    <p>
-
-      O lendário Copacabana Palace é sinônimo de glamour e luxo desde 1923. Sua fachada branca, imponente diante da Praia de Copacabana, é um ícone carioca que mistura sofisticação histórica com hospitalidade contemporânea.
-      O ambiente é elegante, mas acolhedor, e carrega o charme de décadas de histórias, já que o hotel foi palco de grandes eventos e
-      hospedou celebridades do mundo inteiro.
-    
-    </p>
-
-  </section>
 
 
-  <section class="a">
+<section class="hotel-hero">
 
-    <div class="gastro"><img src="img/copacabana.gastronomia.webp" alt=""></div>
+    <h2 class="hotel-local">
+        Copacabana
+    </h2>
 
-    <p>
-      <strong>Gastronomia</strong>
-      O “Copa”, como é carinhosamente chamado, é também um destino gastronômico. O restaurante Cipriani é referência em culinária italiana de alta 
-      gastronomia, enquanto o Mee, premiado com estrela Michelin, é especializado em cozinha pan-asiática. O Pérgula, à beira da icônica piscina, é ideal para brunches sofisticados e 
-      jantares casuais com vista para o mar.
 
-    </p>
+    <h3 class="hotel-nome">
+        Belmond Copacabana Palace
+    </h3>
 
-  </section>
 
-  <section class="b">
-
-    
-    <p>
-      <strong>Acomodação:</strong>
-      Os quartos e suítes combinam o charme clássico com conforto moderno. Tecidos refinados, banheiros de mármore e vistas deslumbrantes para o mar ou para a cidade dão o tom da experiência. As suítes presidenciais são dignas da realeza, já tendo 
-      hospedado figuras históricas e estrelas de cinema.
-    </p>
-
-    <div class="gastro"><img src="img/capacabana.acomodacao.webp"></div>
-
-  </section>
-
-  <section class="c">
-
-    <div class="gastro"><img src="img/copacabana.atrativos.webp" alt=""></div>
-
-      <p>
-        <strong>Atrativos:</strong>
-        A famosa piscina em estilo art déco é um dos cartões-postais do hotel, cercada por cabanas e serviço impecável. O spa oferece terapias exclusivas, enquanto a academia é equipada com aparelhos de última geração. O hóspede ainda pode contar com a proximidade de pontos icônicos como o Pão de Açúcar e o Cristo Redentor, além
-         da vida noturna efervescente de Copacabana e Ipanema.
-      </p>
+</section>
 
 
 
-  </section>
 
- 
+
+
+<section class="hotel-texto">
+
+<p>
+
+O lendário Copacabana Palace é sinônimo de glamour e luxo desde 1923.
+Sua fachada branca, imponente diante da Praia de Copacabana, é um ícone
+carioca que mistura sofisticação histórica com hospitalidade contemporânea.
+
+O ambiente é elegante, mas acolhedor, e carrega o charme de décadas de
+histórias, já que o hotel foi palco de grandes eventos e hospedou
+celebridades do mundo inteiro.
+
+</p>
+
+</section>
+
+
+
+
+
+
+
+<section class="hotel-info">
+
+
+<img 
+src="img/copacabana.gastronomia.webp"
+alt="Gastronomia do Belmond Copacabana Palace">
+
+
+
+<div>
+
+
+<h3>
+Gastronomia
+</h3>
+
+
+<p>
+
+O “Copa”, como é carinhosamente chamado, é também um destino gastronômico.
+
+O restaurante Cipriani é referência em culinária italiana de alta
+gastronomia, enquanto o Mee, premiado com estrela Michelin, é especializado
+em cozinha pan-asiática.
+
+O Pérgula, à beira da icônica piscina, é ideal para brunches sofisticados
+e jantares casuais com vista para o mar.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="hotel-info reverse">
+
+
+<div>
+
+
+<h3>
+Acomodação
+</h3>
+
+
+<p>
+
+Os quartos e suítes combinam o charme clássico com conforto moderno.
+
+Tecidos refinados, banheiros de mármore e vistas deslumbrantes para o mar
+ou para a cidade dão o tom da experiência.
+
+As suítes presidenciais são dignas da realeza, já tendo hospedado figuras
+históricas e estrelas de cinema.
+
+</p>
+
+
+</div>
+
+
+
+<img
+src="img/capacabana.acomodacao.webp"
+alt="Acomodação do Belmond Copacabana Palace">
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="hotel-info">
+
+
+<img
+src="img/copacabana.atrativos.webp"
+alt="Atrativos do Belmond Copacabana Palace">
+
+
+
+<div>
+
+
+<h3>
+Atrativos
+</h3>
+
+
+<p>
+
+A famosa piscina em estilo art déco é um dos cartões-postais do hotel,
+cercada por cabanas e serviço impecável.
+
+O spa oferece terapias exclusivas, enquanto a academia é equipada com
+aparelhos de última geração.
+
+O hóspede ainda pode contar com a proximidade de pontos icônicos como
+o Pão de Açúcar e o Cristo Redentor, além da vida noturna de Copacabana
+e Ipanema.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
 
 </main>
-</body>
+
+
+
+
+
 
 <footer>
-  <div>© <span id="ano"></span> Top Hotéis do Brasil — Todos os direitos reservados</div>
+
+<div>
+
+© <span id="ano"></span>
+SaGeAi — Guia de Hotéis & Turismo
+
+</div>
+
+
 </footer>
 
 
+
+
+</body>
+
 </html>
+```
