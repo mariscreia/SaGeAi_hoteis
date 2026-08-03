@@ -1,206 +1,649 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Top 5 Hotéis do Brasil</title>
 
-<!-- Fonte simples -->
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Top 5 Hotéis do Brasil | SaGeAi</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 
+</head>
 
-</head >
 
-
-<body id= "res">
+<body>
 
 <header>
-  <div class="nav">
-    <div class="brand">
-      <div class="logo"><img src="img/logo.png" alt=""></div>
-      <div>
-        <h1 style="font-size:16px;margin:0">SaGeAi</h1>
-        <div style="font-size:12px;color:var(--muted)">Guia — Hotéis & Turismo</div>
-      </div>
+
+    <div class="nav">
+
+        <div class="brand">
+
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo SaGeAi">
+            </div>
+
+            <div>
+                <h1 class="titulo-logo">SaGeAi</h1>
+                <span class="subtitulo-logo">
+                    Guia — Hotéis & Turismo
+                </span>
+            </div>
+
+        </div>
+
+
+        <nav aria-label="Menu principal">
+
+            <ul>
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+
+                <li>
+                    <a href="#contatos">Contatos</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <div class="searchbox">
+
+            <input 
+            id="filtro"
+            type="text"
+            placeholder="Pesquisar hotel (nome/cidade)"
+            aria-label="Pesquisar hotéis">
+
+            <button id="btnSearch" title="Pesquisar">
+                🔎
+            </button>
+
+        </div>
+
+
     </div>
 
-    <nav aria-label="Menu principal">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contatos">Contatos</a></li>
-      </ul>
-    </nav>
-
-    <div class="searchbox" role="search">
-      <input id="filtro" type="text" placeholder="Pesquisar hotel (nome / cidade)..." aria-label="Pesquisar hotéis">
-      <button id="btnSearch" title="Pesquisar">🔎</button>
-    </div>
-  </div>
 </header>
+
+
 
 <main>
 
-  <!-- HERO -->
-  <section  class="hero" aria-labelledby="hero-title">
-      <h2 id="hero-title">Top 5 hotéis imperdíveis no Brasil</h2>
-      <p>Seleção dos hotéis com melhor experiência, conforto e localização — ideal para quem busca luxo, atendimento impecável e vistas inesquecíveis.</p>
-      <a class="cta" href="#home">Ver hotéis</a>
-   
-  </section>
 
-  <!-- GRID -->
-  <section id="home" class="grid" aria-live="polite">
-    <!-- Hotel 1 -->
-    <article class="hotel" data-nome="Belmond Copacabana Palace" data-cidade="Rio de Janeiro">
-      <img src="img/copacabana.webp" alt="Belmond Copacabana Palace">
-      <div class="hotel-body">
-        <h3>Belmond Copacabana Palace</h3>
-        <div class="meta">Rio de Janeiro • Vista para o mar</div>
-        <div class="badges"><span class="badge">5 estrelas</span><span class="badge">Piscina</span><span class="badge">SPA</span></div>
-        <div class="meta">Avaliação: ★★★★★</div>
-        <div class="actions">
-    
-            <a href="#contatos" class="btn contact">Ligar</a>
-            <a href="copacabana.html"><button class="btn details">Detalhes</button></a>
-        </div>
-      </div>
-    </article>
+<section class="hero" aria-labelledby="hero-title">
 
-    <!-- Hotel 2 -->
-    <article class="hotel" data-nome="Hotel Rosewood" data-cidade="São Paulo">
-      <img src="img/rosewood.webp" alt="Hotel rosewood">
-      <div class="hotel-body">
-        <h3>Hotel Rosewood</h3>
-        <div class="meta">São Paulo • Centro financeiro</div>
-        <div class="badges"><span class="badge">5 estrelas</span><span class="badge">Luxo</span></div>
-        <div class="meta">Avaliação: ★★★★☆</div>
-        <div class="actions">
-            <a href="#contatos" class="btn contact">Ligar</a>
-            <a href="rosewood.html"><button class="btn details">Detalhes</button></a>
-        </div>
-      </div>
-    </article>
+    <h2 id="hero-title">
+        Top 5 hotéis imperdíveis no Brasil
+    </h2>
 
-    <!-- Hotel 3 -->
-    <article class="hotel" data-nome="Hotel Valle D'Incanto" data-cidade="Gramado, RS">
-      <img src="img/valle.webp" alt="valle d'Incanto">
-      <div class="hotel-body">
-        <h3>Valle d'Incanto</h3>
-        <div class="meta">Europeu • Ótimo atendimento</div>
-        <div class="badges"><span class="badge">Chalé</span><span class="badge">Spa</span></div>
-        <div class="meta">Avaliação: ★★★★☆</div>
-        <div class="actions">
-            <a href="#contatos" class="btn contact">Ligar</a>
-            <a href="valle.html"><button class="btn details">Detalhes</button></a>
-        </div>
-      </div>
-    </article>
 
-    <!-- Hotel 4 -->
-    <article class="hotel" data-nome="Hotel das Cataratas" data-cidade="Foz do Iguaçu, PR">
-      <img src="img/cataratas.webp" alt="Hotel das cataratas">
-      <div class="hotel-body">
-        <h3>Hotel das Cataratas</h3>
-        <div class="meta">Próximo as Cataratas • Contato com a natureza</div>
-        <div class="badges"><span class="badge">Piscinas</span><span class="badge">Luxo</span></div>
-        <div class="meta">Avaliação: ★★★★★</div>
-        <div class="actions">
-         <a href="#contatos" class="btn contact">Ligar</a>
-            <a href="cataratas.html"><button class="btn details">Detalhes</button></a>
-        </div>
-    </article>
-
-    <!-- Hotel 5 -->
-    <article class="hotel" data-nome="Nannai" data-cidade="Ipojuca, PE">
-      <img src="img/nannai.webp" alt="Nannai">
-      <div class="hotel-body">
-        <h3>Nannai</h3>
-        <div class="meta">Resort & Spa • Praia de Muro Alto</div>
-        <div class="badges"><span class="badge">Privacidade</span><span class="badge">Luxo</span></div>
-        <div class="meta">Avaliação: ★★★★☆</div>
-        <div class="actions">
-            <a href="#contatos" class="btn contact">Ligar</a>
-             <a href="nannai.html"><button class="btn details">Detalhes</button></a>
-        </div>
-      </div>
-    </article>
-  </section>
-
-  <!-- SOBRE -->
-  <section  class="info" aria-labelledby="sobre-title">
-    <h2 id="sobre-title">Saiba mais sobre o grupo SaGeAi</h2>
-    <p style="color:var(--muted)">
-
-<div id= "sobre" class="container">
-
-        <div class="nos">
-            <img src="img/nos.jpg" alt="sobre nós">
-        </div>
-
-            Somos apaixonadas por viajar e por descobrir experiências únicas que transformam momentos em memórias inesquecíveis.
-            <br>
-            Nosso objetivo é conectar você aos destinos e hospedagens mais incríveis do Brasil, sempre com um olhar cuidadoso para o conforto, a exclusividade e a autenticidade de cada lugar.
-            <br>
-            Aqui, cada dica é escolhida com carinho, unindo pesquisa, experiência e paixão pelo que fazemos. Porque acreditamos que viajar não é apenas mudar de lugar, mas sim viver histórias que ficam para sempre.
-            <br>
-            Esta seleção foi feita com base em avaliações, qualidade de atendimento, localização e experiências marcantes. Cada hotel tem seu perfil, peculiariedade e conforto.
-            <br>
-            Ao divulgar os 5 melhores hotéis do Brasil, reunimos mais do que opções de hospedagem: apresentamos verdadeiros refúgios de luxo, gastronomia e cultura que traduzem a essência de cada região. Nosso compromisso é compartilhar informações detalhadas e confiáveis, para que você encontre o cenário perfeito para sua próxima viagem — seja ela romântica, de descanso, de aventura ou de celebração.
-
+    <p>
+        Seleção dos hotéis com melhor experiência,
+        conforto e localização — ideal para quem busca
+        luxo, atendimento impecável e vistas inesquecíveis.
     </p>
 
-</div>
 
-    <div style="margin-top:12px; display:flex; gap:12px; flex-wrap:wrap">
-      <div style="min-width:220px; background:rgba(255,255,255,0.02); padding:12px; border-radius:8px">
-        <strong>Missão</strong>
-        <p style="color:var(--muted); margin:6px 0 0">Ajudar viajantes a encontrar experiências memoráveis no Brasil.</p>
-      </div>
-      <div style="min-width:220px; background:rgba(255,255,255,0.02); padding:12px; border-radius:8px">
-        <strong>Critérios</strong>
-        <p style="color:var(--muted); margin:6px 0 0">Avaliação, serviço, localização, instalações e inovação.</p>
-      </div>
+    <a href="#home" class="cta">
+        Ver hotéis
+    </a>
+
+
+</section>
+
+
+
+<section id="home" class="grid">
+
+
+<article class="hotel">
+
+    <img src="img/copacabana.webp"
+    alt="Belmond Copacabana Palace no Rio de Janeiro">
+
+
+    <div class="hotel-body">
+
+        <h3>
+            Belmond Copacabana Palace
+        </h3>
+
+
+        <p class="meta">
+            Rio de Janeiro • Vista para o mar
+        </p>
+
+
+        <div class="badges">
+
+            <span class="badge">
+                5 estrelas
+            </span>
+
+            <span class="badge">
+                Piscina
+            </span>
+
+            <span class="badge">
+                SPA
+            </span>
+
+        </div>
+
+
+        <p class="meta">
+            Avaliação: ★★★★★
+        </p>
+
+
+        <div class="actions">
+
+            <a href="#contatos" class="btn contact">
+                Ligar
+            </a>
+
+
+            <a href="copacabana.html" class="btn details">
+                Detalhes
+            </a>
+
+        </div>
+
+
     </div>
-  </section>
 
-  <!-- CONTATOS -->
-  <section id="contatos" class="info" aria-labelledby="contatos-title">
-    <h2 id="contatos-title">Contatos & Reserva</h2>
 
-    <div class="two-col" style="margin-top:12px;">
-      <div>
-        <p style="color:var(--muted)">Tem dúvida? Quer reservar um hotel selecionado? Use o formulário ou ligue diretamente.</p>
+</article>
 
-        <ul style="color:var(--muted); padding-left:18px">
-          <li>Suporte geral: <a href="tel:+552100000000" style="color:var(--accent); text-decoration:none">+55 (98) 99159-4131</a></li>
-          <li>Email: <a href="mailto:reservas@exemplo.com" style="color:var(--accent); text-decoration:none">silvageovannadesa@gmail.com</a></li>
-        </ul>
-      </div>
+<!-- HOTEL 2 -->
 
-      <div>
-        <form id="formContato" onsubmit="enviarFormulario(event)" aria-label="Formulário de contato">
-          <label for="nome">Nome</label>
-          <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+<article class="hotel">
 
-          <label for="email" style="margin-top:8px">Email</label>
-          <input id="email" name="email" type="email" placeholder="seu@email.com" required>
+    <img src="img/rosewood.webp"
+    alt="Hotel Rosewood em São Paulo">
 
-          <label for="mensagem" style="margin-top:8px">Mensagem</label>
-          <textarea id="mensagem" name="mensagem" placeholder="Como podemos ajudar?" required></textarea>
 
-          <button type="submit" style="margin-top:8px; background:var(--accent); border:none; padding:10px 12px; border-radius:8px; color:#071025; font-weight:700; cursor:pointer">Enviar</button>
-        </form>
-      </div>
+    <div class="hotel-body">
+
+        <h3>
+            Hotel Rosewood
+        </h3>
+
+
+        <p class="meta">
+            São Paulo • Centro financeiro
+        </p>
+
+
+        <div class="badges">
+
+            <span class="badge">
+                5 estrelas
+            </span>
+
+            <span class="badge">
+                Luxo
+            </span>
+
+        </div>
+
+
+        <p class="meta">
+            Avaliação: ★★★★☆
+        </p>
+
+
+        <div class="actions">
+
+            <a href="#contatos" class="btn contact">
+                Ligar
+            </a>
+
+
+            <a href="rosewood.html" class="btn details">
+                Detalhes
+            </a>
+
+        </div>
+
+
     </div>
-  </section>
+
+</article>
+
+
+
+
+<!-- HOTEL 3 -->
+
+<article class="hotel">
+
+    <img src="img/valle.webp"
+    alt="Hotel Valle D'Incanto em Gramado">
+
+
+    <div class="hotel-body">
+
+        <h3>
+            Valle D'Incanto
+        </h3>
+
+
+        <p class="meta">
+            Gramado • Estilo europeu e ótimo atendimento
+        </p>
+
+
+        <div class="badges">
+
+            <span class="badge">
+                Chalé
+            </span>
+
+            <span class="badge">
+                Spa
+            </span>
+
+        </div>
+
+
+        <p class="meta">
+            Avaliação: ★★★★☆
+        </p>
+
+
+        <div class="actions">
+
+            <a href="#contatos" class="btn contact">
+                Ligar
+            </a>
+
+
+            <a href="valle.html" class="btn details">
+                Detalhes
+            </a>
+
+        </div>
+
+
+    </div>
+
+</article>
+
+
+
+
+<!-- HOTEL 4 -->
+
+<article class="hotel">
+
+    <img src="img/cataratas.webp"
+    alt="Hotel das Cataratas em Foz do Iguaçu">
+
+
+    <div class="hotel-body">
+
+        <h3>
+            Hotel das Cataratas
+        </h3>
+
+
+        <p class="meta">
+            Foz do Iguaçu • Próximo às Cataratas
+        </p>
+
+
+        <div class="badges">
+
+            <span class="badge">
+                Piscinas
+            </span>
+
+            <span class="badge">
+                Luxo
+            </span>
+
+        </div>
+
+
+        <p class="meta">
+            Avaliação: ★★★★★
+        </p>
+
+
+        <div class="actions">
+
+            <a href="#contatos" class="btn contact">
+                Ligar
+            </a>
+
+
+            <a href="cataratas.html" class="btn details">
+                Detalhes
+            </a>
+
+        </div>
+
+
+    </div>
+
+</article>
+
+
+
+
+<!-- HOTEL 5 -->
+
+<article class="hotel">
+
+    <img src="img/nannai.webp"
+    alt="Nannai Resort em Pernambuco">
+
+
+    <div class="hotel-body">
+
+        <h3>
+            Nannai
+        </h3>
+
+
+        <p class="meta">
+            Resort & Spa • Praia de Muro Alto
+        </p>
+
+
+        <div class="badges">
+
+            <span class="badge">
+                Privacidade
+            </span>
+
+            <span class="badge">
+                Luxo
+            </span>
+
+        </div>
+
+
+        <p class="meta">
+            Avaliação: ★★★★☆
+        </p>
+
+
+        <div class="actions">
+
+            <a href="#contatos" class="btn contact">
+                Ligar
+            </a>
+
+
+            <a href="nannai.html" class="btn details">
+                Detalhes
+            </a>
+
+        </div>
+
+
+    </div>
+
+</article>
+
+
+</section>
+
+<!-- SOBRE -->
+
+<section id="sobre" class="info">
+
+    <h2>
+        Saiba mais sobre o grupo SaGeAi
+    </h2>
+
+
+    <div class="container">
+
+
+        <div class="nos">
+
+            <img src="img/nos.jpg" alt="Equipe SaGeAi">
+
+        </div>
+
+        <div class="texto-sobre">
+
+            <p>
+                Somos apaixonadas por viajar e por descobrir experiências
+                únicas que transformam momentos em memórias inesquecíveis.
+            </p>
+
+
+            <p>
+                Nosso objetivo é conectar você aos destinos e hospedagens
+                mais incríveis do Brasil, sempre com um olhar cuidadoso para
+                o conforto, a exclusividade e a autenticidade de cada lugar.
+            </p>
+
+
+            <p>
+                Aqui, cada dica é escolhida com carinho, unindo pesquisa,
+                experiência e paixão pelo que fazemos. Porque acreditamos que
+                viajar não é apenas mudar de lugar, mas viver histórias que
+                ficam para sempre.
+            </p>
+
+
+            <p>
+                Esta seleção foi feita com base em avaliações, qualidade de
+                atendimento, localização e experiências marcantes.
+                Cada hotel possui seu próprio perfil, personalidade e conforto.
+            </p>
+
+
+            <p>
+                Ao divulgar os 5 melhores hotéis do Brasil, reunimos mais do
+                que opções de hospedagem: apresentamos refúgios de luxo,
+                gastronomia e cultura que representam cada região.
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="cards-info">
+
+
+        <div class="card-info">
+
+            <strong>
+                Missão
+            </strong>
+
+            <p>
+                Ajudar viajantes a encontrar experiências memoráveis no Brasil.
+            </p>
+
+        </div>
+
+
+
+        <div class="card-info">
+
+            <strong>
+                Critérios
+            </strong>
+
+            <p>
+                Avaliação, serviço, localização, instalações e inovação.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- CONTATOS -->
+
+
+<section id="contatos" class="info">
+
+
+    <h2>
+        Contatos & Reserva
+    </h2>
+
+    <div class="two-col">
+
+
+
+        <div>
+
+
+            <p class="texto-muted">
+                Tem dúvida? Quer reservar um hotel selecionado?
+                Use o formulário ou entre em contato diretamente.
+            </p>
+
+
+
+            <ul class="lista-contato">
+
+
+                <li>
+                    Suporte geral:
+                    <a href="tel:+5598991594131">
+                        +55 (98) 99159-4131
+                    </a>
+                </li>
+
+
+
+                <li>
+                    Email:
+                    <a href="mailto:silvageovannadesa@gmail.com">
+                        silvageovannadesa@gmail.com
+                    </a>
+                </li>
+
+
+            </ul>
+
+
+        </div>
+
+        <div>
+
+
+            <form id="formContato"
+            onsubmit="enviarFormulario(event)">
+
+
+                <label for="nome">
+                    Nome
+                </label>
+
+
+                <input
+                id="nome"
+                name="nome"
+                type="text"
+                placeholder="Seu nome"
+                required>
+
+
+
+
+                <label for="email">
+                    Email
+                </label>
+
+
+                <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="seu@email.com"
+                required>
+
+
+
+
+                <label for="mensagem">
+                    Mensagem
+                </label>
+
+
+                <textarea
+                id="mensagem"
+                name="mensagem"
+                placeholder="Como podemos ajudar?"
+                required></textarea>
+
+
+
+                <button type="submit" class="btn enviar">
+                    Enviar
+                </button>
+
+
+
+            </form>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</section>
+
 
 </main>
 
+
 <footer>
-  <div>© <span id="ano"></span> Top Hotéis do Brasil — Todos os direitos reservados</div>
+
+
+    <div>
+
+        © <span id="ano"></span>
+        SaGeAi — Guia de Hotéis & Turismo
+
+    </div>
+
+
 </footer>
 
+
+
+
+<script src="script.js"></script>
+
+
 </body>
+
 </html>
+
+
+
+
