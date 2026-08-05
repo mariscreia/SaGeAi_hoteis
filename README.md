@@ -1,5 +1,4 @@
 #SaGeAi — Guia de Hotéis & Turismo
-
 O SaGeAi é um site desenvolvido para apresentar uma seleção de hotéis de destaque no Brasil, 
 reunindo informações sobre hospedagens, experiências, gastronomia, acomodações e principais 
 atrações de cada destino.
@@ -9,7 +8,6 @@ opções de hotéis de luxo, visualizem detalhes de cada local e tenham uma expe
 inspirada em plataformas de turismo.
 
 #Objetivo 
-
 O principal objetivo do SaGeAi é criar uma interface intuitiva e agradável para apresentar informações sobre hotéis brasileiros, 
 praticando conceitos de desenvolvimento web como:
 
@@ -27,11 +25,10 @@ Front-End através da criação de um site completo com múltiplas páginas.
 -CSS
 
 #Funcionalidades
-
- -Página inicial com apresentação dos hotéis selecionados;
- -Cards com informações resumidas de cada hospedagem;
- -Páginas individuais para cada hotel;
- -Seções de gastronomia, acomodação e atrações;
- -Menu de navegação entre páginas;
- -Formulário de contato;
- -Layout responsivo para diferentes tamanhos de tela.
+-Página inicial com apresentação dos hotéis selecionados;
+-Cards com informações resumidas de cada hospedagem;
+-Páginas individuais para cada hotel;
+-Seções de gastronomia, acomodação e atrações;
+-Menu de navegação entre páginas;
+-Formulário de contato;
+-Layout responsivo para diferentes tamanhos de tela.
