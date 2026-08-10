@@ -11,25 +11,25 @@ inspirada em plataformas de turismo.
 O principal objetivo do SaGeAi é criar uma interface intuitiva e agradável para apresentar informações sobre hotéis brasileiros, 
 praticando conceitos de desenvolvimento web como:
 
--Estruturação de páginas com HTML;
--Criação de layouts responsivos;
--Estilização avançada com CSS;
--Organização de componentes e páginas;
--Desenvolvimento de uma experiência de navegação simples e elegante.
+- Estruturação de páginas com HTML;
+- Criação de layouts responsivos;
+- Estilização avançada com CSS;
+- Organização de componentes e páginas;
+- Desenvolvimento de uma experiência de navegação simples e elegante.
 
 Além disso, o projeto busca demonstrar habilidades de desenvolvimento 
 Front-End através da criação de um site completo com múltiplas páginas.
 
 ## Tecnologias
--HTML
--CSS
--Conhecimento em responsividade
+- HTML
+- CSS
+- Conhecimento em responsividade
 
 ## Funcionalidades
--Página inicial com apresentação dos hotéis selecionados;
--Cards com informações resumidas de cada hospedagem;
--Páginas individuais para cada hotel;
--Seções de gastronomia, acomodação e atrações;
--Menu de navegação entre páginas;
--Formulário de contato;
--Layout responsivo para diferentes tamanhos de tela.
+- Página inicial com apresentação dos hotéis selecionados;
+- Cards com informações resumidas de cada hospedagem;
+- Páginas individuais para cada hotel;
+- Seções de gastronomia, acomodação e atrações;
+- Menu de navegação entre páginas;
+- Formulário de contato;
+- Layout responsivo para diferentes tamanhos de tela.
